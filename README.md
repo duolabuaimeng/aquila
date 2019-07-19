@@ -7,10 +7,10 @@ aquila consists of two modules for sequencing-based metagenomic profiling. The a
 First of all, we should:
 - change directory (cd) to aquila folder
 - cd into aquila directory and call aquilaIndex module help for details
-  
+  ```
   cd ../aquila
   python aquila.py index -h
-  
+  ```
 ## index
 Now you can build your own database,you need to make sure that kallisto is already in your path. We need the database of strains and the database of the core part of strains, which can be downloaded in NCBI.Attention should be paid to the naming of the core part of the strain.(strain named Bacillus_cereus ,core part of strain named: only_Bacillus_cereus_blastn ) 
 ```
@@ -27,7 +27,7 @@ python aquila.py map -h
 ```
 ## map
 First you need to make sure that the index has been established.
-
+```
 python aquila.py map -n 5 -1 read_1 -2 read_2 -referenceFiles path1 -coreRefFiles path2 -outDir path3
 
 Required arguments:
@@ -47,3 +47,4 @@ Optional arguments:
 
 -t, int                       number of threads to use (default: 1)
 
+```
