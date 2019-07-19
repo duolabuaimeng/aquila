@@ -17,6 +17,7 @@ Now you can build your own database,you need to make sure that kallisto is alrea
 python aquila.py index -i path1 -c path2
 
 Required arguments:
+
 -i, string                    the directory of strains.
 
 -c, string                    the directory of core part of strains.
@@ -31,6 +32,7 @@ First you need to make sure that the index has been established.
 python aquila.py map -n 5 -1 read_1 -2 read_2 -referenceFiles path1 -coreRefFiles path2 -outDir path3
 
 Required arguments:
+
 -1, string                    paired-end and requires an even number of FASTQ files represented as pairs
 
 -2, string                    paired-end and requires an even number of FASTQ files represented as pairs
@@ -42,6 +44,7 @@ Required arguments:
 -outDir, string               directory to write output to
 
 Optional arguments:
+
 -n, int                       this parameter represents several strains of filters that we have screened as reference sequences.
                               (default: 1)
 
