@@ -13,14 +13,14 @@ First of all, we should:
   
 ## index
 Now you can build your own database,you need to make sure that kallisto is already in your path. We need the database of strains and the database of the core part of strains, which can be downloaded in NCBI.Attention should be paid to the naming of the core part of the strain.(strain named Bacillus_cereus ,core part of strain named: only_Bacillus_cereus_blastn ) 
-
+'''
 python aquila.py index -i path1 -c path2
 
 Required arguments:
 -i, string                    the directory of strains.
 
 -c, string                    the directory of core part of strains.
-
+'''
 call aquilaMap module help for details
 python aquila.py map -h
 ## map
